@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+
+    <meta name="title" content="">
+    <meta name="description" content="" />
+
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+  </head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-md px-3 px-md-4 navbar-dark">
+    <a class="navbar-brand pb-2" href="#"><img src="./images/logo-dark.png" alt="logo" /></a>
+  
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navigation-bar" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="https://fincon.in/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://fincon.in/about-us/">Know Us</a>
+              </li>
+             
+              <li class="nav-item i1">
+  
+              <a class="nav-link dropdown" href="https://fincon.in/services/">Services</a>
+  
+              <ul class="my-list pullDown">
+  
+              <li><a class="d-item bt" href="https://fincon.in/mutual-funds/">Mutual Funds</a></li>
+              <li><a class="d-item bt" href="https://fincon.in/insurance/">Insurance</a></li>
+              <li><a class="d-item bt" href="https://fincon.in/bonds/">Bonds</a></li>
+              <li><a class="d-item bt" href="https://fincon.in/corporate-fixed-deposit/">Corporate Fixed Deposit</a></li>
+              <li><a class="d-item bt" href="https://fincon.in/portfolio-management-service/">Portfolio Management Service</a></li>
+              <li><a class="d-item bt" href="https://fincon.in/loans/">Loans</a></li>
+              <li><a class="d-item bt" href="https://fincon.in/ancillary-services/">Ancillary Services</a></li>
+  
+              </ul>
+  
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Calculators</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://fincon.in/blogs/">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://fincon.in/contacts/">Reach Us</a>
+              </li>
+            </ul>
+         
+          <a target="_blank" class="login-btn" href="https://finconinvestments.wealthmagic.in/Login.aspx">Login</a>
+      </div>
+  </nav>
+</header>
+<section class="login-main">
+    <div class="container">
+        <form action="POST" class="login-form mt-5" id="form">
+          <div class="mb-5 d-flex justify-content-between text-center align-items-center">
+              <!--<span class="percentage_show"></span>
+               <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div> -->
+              
+              <span class='baricon' id="progress1">1</span>
+              <span id="bar1" class='progress_bar'></span>
+              <span class='baricon' id="progress2">2</span>
+              <span id="bar2" class='progress_bar'></span>
+              <span class='baricon' id="progress3">3</span>
+              <span id="bar3" class='progress_bar'></span>
+              <span class='baricon' id="progress4">4</span>
+              <span id="bar4" class='progress_bar'></span>
+              <span class='baricon' id="progress5">5</span>
+              <span id="bar5" class='progress_bar'></span>
+              <span class='baricon' id="progress6">6</span>
+              <span id="bar6" class='progress_bar'></span>
+              <span class='baricon' id="progress7">7</span>
+              <span id="bar7" class='progress_bar'></span>
+              <span class='baricon' id="progress8">8</span>
+              <span id="bar8" class='progress_bar'></span>
+              <span class='baricon' id="progress9">9</span>
+              
+          </div>
+          <!-- Enter your mobile number -->
+          <div class="login-details" id="step1">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-sm-6 col-12">
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-group flex-row mb-3">
+                      <input type="text" class="form-control" id="email" name="email" value="">
+                      <span class="error d-block"></span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="mobile_no">Mobile No.</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" id="mobile_no" name="mobile_no" value="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" maxlength="10">
+                    </div>
+                  </div>
+                  <small class="mb-3 d-block">We will send you an OTP on this number.</small>
+                  <div class="d-flex justify-content-between mt-4 action-btn">
+                    <input value="Send OTP" type="button" name="send-otp" id="stepone" class="btn btn-submit1">
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Enter your mobile number -->
+
+          <!-- Enter OTP -->
+          <div class="mobile-otp-details" id="step2">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-sm-6 col-12">
+                  <h1>Enter OTP</h1>
+                  <h2>Confirm Mobile OTP send to <span></span></h2>
+                  <div class="userInput pb-3">
+                      <input type="text" id='ist' maxlength="1" onkeyup="clickEvent(this,'sec')">
+                      <input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+                      <input type="text" id="third" maxlength="1" onkeyup="clickEvent(this,'fourth')">
+                      <input type="text" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+                      <input type="text" id="fifth" maxlength="1">
+                  </div>
+                  <small class="mb-3 d-block">Didn’t receive OTP? <span id="counter"></span></small>
+                  <div class="d-flex justify-content-between mt-4 action-btn">
+                    <input value="Verify" type="button" name="verify" id="steptwo" class="btn btn-submit1">
+                  </div>
+              </div>
+            </div>
+          </div>
+        <!-- End Enter OTP -->
+
+        <!-- Mobile verified -->
+        <div class="mobile-verified" id="step3">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-6 col-12 text-center">
+              <img src="images/mobile-number-verified.svg" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12 mt-3 mt-md-0">
+              <div class="text-md-left text-center pb-3"><b>Mobile number verified!</b></div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mt-4 action-btn">
+            <input value="Next" type="button" name="next" id="stepthree" class="btn btn-submit1">
+          </div>
+        </div>
+        <!-- End Mobile verified -->
+
+        <!-- Personal Details -->
+        <div class="personal-details" id="step4">
+          <h1>Personal Details</h1>
+          <div class="row align-items-center">
+            <div class="col-lg-4 col-sm-4 col-12">
+              <div class="form-group">
+                <label for="first_name">First Name</label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" id="first_name" name="first_name" value="">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-12">  
+              <div class="form-group">
+                <label for="middle_name">Middle Name</label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" id="middle_name" name="middle_name" value="">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-12">
+              <div class="form-group">
+                <label for="last_name">Last Name</label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" id="last_name" name="last_name" value="">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-12">
+              <div class="form-group">
+                <label for="pan">PAN</label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" id="pan" name="pan" maxlength="10">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-12">
+              <div class="form-group">
+                <label for="date_of_birth">Date of Birth</label>
+                <div class="input-group mb-3">
+                  <input type="date" class="form-control" placeholder="DD / MM / YYYY" id="date_of_birth" name="date_of_birth" value="">
+                  <!-- <div class="input-group-append">
+                    <span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end mt-4 action-btn">
+            <input value="Next" type="button" name="next" id="stepfour" class="btn btn-submit1">
+          </div>
+        </div>
+        <!-- End Personal Details -->
+
+          <!-- Your Profile -->
+          <div class="profile" id="step5">
+            <h1>Your Profile</h1>
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">
+                <div class="form-group">
+                  <label for="city_of_birth">City of Birth</label>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="city_of_birth" name="city_of_birth" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">  
+                <div class="form-group">
+                  <label for="country_of_birth">County of Birth</label>
+                  <div class="input-group mb-3">
+                    <select title="country_of_birth" class="selectpicker" id="country_of_birth" name="country_of_birth">
+                      <option>Select</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">
+                <div class="form-group">
+                  <label for="mother_name">Mother Name</label>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="mother_name" name="mother_name" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">
+                <div class="form-group">
+                  <h2>Marital Status</h2>
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="single">
+                      <input type="radio" class="form-check-input" id="single" name="option" value="single">Single
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="married">
+                      <input type="radio" class="form-check-input" id="married" name="option" value="married">Married
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">
+                <div class="form-group">
+                  <h2>Gender</h2>
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="male">
+                      <input type="radio" class="form-check-input" id="male" name="options" value="male">Male
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="female">
+                      <input type="radio" class="form-check-input" id="female" name="options" value="female">Female
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="trans">
+                      <input type="radio" class="form-check-input" id="trans" name="options" value="trans">Trans
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">
+                <div class="form-group">
+                  <label for="annual_income">Annual Income</label>
+                  <select class="form-control" id="annual_income" name="annual_income">
+                    <option>Select</option>
+                    <option>Below 1 Lakh</option>
+                    <option>1 to 5 Lakh</option>
+                    <option>5 to 10 Lakh</option>
+                    <option>10 to 25 Lakh</option>
+                    <option>25 lakh to 1 Cr</option>
+                    <option>Above 1 Cr</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">
+                <div class="form-group">
+                  <label for="occupation">Occupation</label>
+                  <select class="form-control" id="occupation" name="occupation">
+                    <option>Select</option>
+                    <option>Business</option>
+                    <option>Service</option>
+                    <option>Professional</option>
+                    <option>Agriculture</option>
+                    <option>Retired</option>
+                    <option>Housewife</option>
+                    <option>Student</option>
+                    <option>Others</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mt-4 action-btn">
+              <input value="Previous" type="button" name="previous" id="previous1" class="btn btn-submit">
+              <input value="Next" type="button" name="next" id="stepfive" class="btn btn-submit">
+            </div>
+          </div>
+          <!-- End Your Profile -->
+
+          <!-- Mutual Fund Nominee Details -->
+          <div class="nominee-details" id="step6">
+            <h1>Mutual Fund Nominee Details</h1>
+            <small class="mb-3 d-block">Nominee must be major</small>
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">
+                <div class="form-group">
+                  <label for="nominee_name">Nominee Name</label>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="nominee_name" name="nominee_name" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">  
+                <div class="form-group">
+                  <label for="relation">Relation</label>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="relation" name="relation" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">
+                <div class="form-group">
+                  <label for="nominee_birth_date">Date of Birth</label>
+                  <div class="input-group mb-3">
+                    <input type="date" class="form-control" placeholder="DD / MM / YYYY " id="nominee_birth_date" name="nominee_birth_date" value="" onchange="ageCalculator()">
+                    <h3 style="color:32A80F" id="result" align="center"></h3> 
+                    <!-- <div class="input-group-append">
+                      <span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3" id="agree_minor" style="display: none;">
+                <div class="form-group d-flex align-self-center">
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="is_minor">
+                      <input type="checkbox" class="form-check-input" id="is_minor" name="is_minor" value="" >Is minor
+                    </label><!--  onclick="minorFunction()" -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3" style="display:none" id="guardian">  
+                <div class="form-group">
+                  <label for="guardian_name">Guardian Name</label>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="guardian_name" name="guardian_name" value="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mt-4 action-btn">
+              <input value="Previous" type="button" name="previous" id="previous2" class="btn btn-submit">
+              <input value="Next" type="button" name="next" id="stepsix" class="btn btn-submit">
+            </div>
+          </div>
+          <!-- End Mutual Fund Nominee Details -->
+
+          <!-- Bank Details -->
+          <div class="bank-details" id="step7">
+            <h1>Bank Details</h1>
+            <small class="mb-3 d-block">Saving bank account in your name from which you will invest and receive payout.</small>
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">
+                <div class="form-group">
+                  <label for="ifsc_code">IFSC Code</label>
+                  <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="ifsc_code" name="ifsc_code" min="1">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">  
+                <div class="form-group">
+                  <label for="micr_no">MICR Number</label>
+                  <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="micr_no" name="micr_no" min="1">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">  
+                <div class="form-group">
+                  <label for="bank_account_number">Bank account Number</label>
+                  <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="bank_account_number" name="bank_account_number" min="1">
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mb-3">
+                <div class="form-group"> 
+                  <small class="d-block pb-3">Copy of cancelled cheque / statement</small>
+                  <input type="file" id="file_upload" name="file_upload" multiple="multiple" />
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mt-4 action-btn">
+              <input value="Previous" type="button" name="previous" id="previous3" class="btn btn-submit">
+              <input value="Next" type="button" name="next" id="stepseven" class="btn btn-submit">
+            </div>
+          </div>
+          <!-- End Bank Details -->
+
+          <!-- Comminication Details -->
+          <div class="comminication-details" id="step8">
+            <h1>Comminication Address (India)</h1>
+            <div class="row align-items-center">
+              <div class="col-lg-6 col-sm-6 col-12 mb-3">
+                <div class="form-group">
+                  <label for="address1">Line 1</label>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="address1" name="address1" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-6 col-12 mb-3">  
+                <div class="form-group">
+                  <label for="address2">Line 2</label>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="address2" name="address2" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 col-sm-12 col-12 mb-3">  
+                <div class="form-group">
+                  <label for="address3">Line 3</label>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="address3" name="address3" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="city" name="city" value="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">
+                <div class="form-group">
+                  <label for="state">State</label>
+                  <div class="input-group mb-3">
+                    <select title="state" class="selectpicker" id="state" name="state" value="">
+                      <option>Select State</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12 mb-3">
+                <div class="form-group">
+                  <label for="pin_code">Pin Code</label>
+                  <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="pin_code" name="pin_code" min="1" maxlength="6">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mt-4 action-btn">
+              <input value="Previous" type="button" name="previous" id="previous4" class="btn btn-submit">
+              <input value="Next" type="button" name="next" id="stepeight" class="btn btn-submit">
+            </div>
+          </div>
+          <!-- End Comminication Details -->
+
+          <!-- Upload Document -->
+          <div class="comminication-details" id="step9">
+            <h1>Upload Document</h1>
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-3 text-center">
+                <img src="images/pan-card.svg" alt="" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-3 text-center">
+                <img src="images/cheque.svg" alt="" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-3 text-center">
+                <img src="images/aof.svg" alt="" class="img-fluid">
+              </div>
+              <div class="col-12 mb-3">
+                <div class="mb-3">
+                  <label for="customFile" class="d-block">Copy of cancelled cheque / statement</label>  
+                  <input type="file" id="file_upload_chq" name="file_upload_chq" multiple="multiple" />
+                </div>
+                <div class="mb-3">
+                  <label for="customFile" class="d-block">Copy of pan</label>  
+                  <input type="file" id="file_upload_pan" name="file_upload_pan" multiple="multiple" />
+                </div>
+                <div class="mb-3">
+                  <label for="customFile" class="d-block">Copy of AOI</label>  
+                  <input type="file" id="file_upload_aoi" name="file_upload_aoi" multiple="multiple" />
+                </div>
+                
+                <small class="pt-2 d-block">Copy of cancelled cheque with your name latest bank statement that shows:</small>
+              </div>
+              <div class="col-12 mb-3">
+                <div class="input-group mb-2">
+                  <div class="form-check-inline checkbox-readonly">
+                    <label class="form-check-label" for="chkBox_1">
+                      <input type="checkbox" class="form-check-input" name="chkBox_1" checked value="1" readonly>Not related to poltical
+                    </label>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <div class="form-check-inline checkbox-readonly">
+                    <label class="form-check-label" for="chkBox_2">
+                      <input type="checkbox" class="form-check-input" name="chkBox_2" checked value="1" readonly>Tax residency is India
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mt-4 action-btn">
+              <input value="Previous" type="button" name="previous" id="previous5" class="btn btn-submit">
+              <input value="Next" type="button" name="next" id="stepnine" class="btn btn-submit">
+            </div>
+          </div>
+          <!-- End Upload Document -->
+
+          <!-- Registration Completed! -->
+          <div class="registration-completed" id="step10">
+            <div class="row align-items-center">
+              <div class="col-lg-6 col-sm-6 col-12 text-center">
+                <img src="images/registeration-complete.svg" alt="" class="img-fluid">
+              </div>
+              <div class="col-lg-6 col-sm-6 col-12">
+                <div class="text-md-left text-center pb-3"><b>Your Mutual Fund account is created sucessfully. <br/>After sucessful verification account will be activated.</b></div>
+              </div>
+            </div>
+          </div>
+          <!-- End Registration Completed! -->
+
+        </form>
+    </div>
+</section>
+<footer class="mt-5">
+  <div class="footer-widgets py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-12 pb-0 pb-5">
+          <div class="footer-logo pb-5">
+            <img src="images/logo-light.png" title="" alt="" class="img-fluid">
+          </div>
+          <div class="social-media-icons">
+            <ul class="smi-list d-flex">
+              <li class="facebook">
+                <a href="https://www.facebook.com/fincondotin/" aria-label="Facebook: https://www.facebook.com/fincondotin/" class=""> 
+                  <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false"><path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path></svg>
+                </a>
+              </li>
+              <li class="twitter">
+                <a href="https://twitter.com/fincondotin" aria-label="Twitter: https://twitter.com/fincondotin" class=""> 
+                  <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg>
+                </a>
+              </li>
+              <li class="instagram">
+                <a href="https://www.instagram.com/fincondotin/" aria-label="Instagram: https://www.instagram.com/fincondotin/" class=""> 
+                  <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false"><path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path></svg>
+                </a>
+              </li>
+              <li class="youtube">
+                <a href="https://www.youtube.com/channel/UCtXWk_HrhfvetXXbzIfbVoA?view_as=subscriber" aria-label="YouTube: https://www.youtube.com/channel/UCtXWk_HrhfvetXXbzIfbVoA?view_as=subscriber" class=""> 
+                  <svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" focusable="false"><path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12 pb-0 pb-5">
+          <div class="footer-menu">
+            <div class="menu-title">Know Us</div>
+            <ul class="menu-list">
+              <li>
+                <a href="https://fincon.in/blogs/">Blogs</a>
+              </li>
+              <li>
+                <a href="https://fincon.in/#">Calculators</a>
+              </li>
+              <li>
+                <a href="https://fincon.in/contacts/">Reach Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12 pb-0 pb-5">
+          <div class="footer-menu">
+            <div class="menu-title">Services</div>
+            <ul class="menu-list">
+              <li>
+                <a href="https://fincon.in/mutual-funds/">Mutual Funds</a>
+              </li>
+              <li>
+                <a href="https://fincon.in/insurance/">Insurance</a>
+              </li>
+              <li>
+                <a href="https://fincon.in/bonds/">Bonds</a>
+              </li>
+              <li>
+                <a href="https://fincon.in/corporate-fixed-deposit/">Corporate Fixed Deposit</a>
+              </li>
+              <li>
+                <a href="https://fincon.in/portfolio-management-service/">Portfolio Management Service</a>
+              </li>
+              <li>
+                <a href="https://fincon.in/loans/">Loans</a>
+              </li>
+              <li>
+                <a href="https://fincon.in/ancillary-services/">Ancillary Services</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-12">
+          <div class="footer-menu ">
+            <div class="menu-title">Reach us</div>
+            <ul class="menu-list footer-contact-info">
+              <li><strong>Call to:</strong> 777 0000 5632</li>
+              <li><strong>Mail to:</strong> <a href="mailto:info@fincon.in" style="display: initial;">info@fincon.in</a></li>
+              <li><strong>Address:</strong> B-301, Star Manor, Anand Cross Rd, Malad West Mumbai, Maharashtra 400064</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-copyright py-4">
+    <div class="container">
+      <p><b>DISCLAIMER :</b> www.fincon.in is an online website of Vivek Kumar Rathi who is registered vide ARN-109208 as a AMFI Registered Mutual Fund Distributor. The said website is intends to provide educative and informative details related to investments and also provide online transaction facility in Mutual Funds. We do not charge any fees for these calculators and information, because we earn our commissions from the Mutual Fund companies. The website does not guarantee any
+      returns or financial goal success by any means.</p><br>
+      <p>Mutual Fund investments are subject to market risks. Please read all scheme related documents
+      carefully before investing. Past performance is not an indicator of future returns.
+      </p><br>
+      <p class="text-center">Copyright © 2022 Fincon Investments. All rights reserved</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script> -->
+
+<script>
+  var vform = $("#form").validate({
+          rules:
+          {
+            email:{
+                required: true,
+                email:true,
+                customemail:true
+              },
+              mobile_no: {
+                  required: true,
+                  digits: true
+              },
+              first_name: {
+                  required: true
+              },
+              middle_name: {
+                  required: true
+              },
+              last_name: {
+                  required: true
+              },
+              pan: {
+                  required: true,
+                  // pan: true,
+                  panvalidate:true
+              },
+              date_of_birth: {
+                  required: true
+              },
+              city_of_birth: {
+                  required: true
+              },
+              country_of_birth: {
+                  required: true
+              },
+              mother_name: {
+                  required: true
+              },
+              annual_income: {
+                  required: true
+              },
+              occupation: {
+                  required: true
+              },
+              nominee_name: {
+                  required: true
+              },
+              relation: {
+                  required: true
+              },
+              nominee_birth_date: {
+                  required: true
+                  // minorage:true
+              },
+              is_minor: {
+                  required: true
+              },
+              guardian_name: {
+                  required: true
+              },
+              ifsc_code: {
+                  required: true
+              },
+              micr_no: {
+                  required: true
+              },
+              bank_account_number: {
+                  required: true
+              },
+      	      file_upload: {
+                        required: true
+                    },
+      	      address1: {
+                        required: true
+                    },
+      	      address2: {
+                        required: true
+                    },
+      	      address3: {
+                        required: true
+                    },
+      	      city: {
+                        required: true
+                    },
+      	      state: {
+                        required: true
+                    },
+      	      pin_code: {
+                        required: true
+                    },
+      	      file_upload_docs: {
+                        required: true
+                    }
+                },
+          messages:
+          {
+              email:{
+                required: "Please provide your email",
+                email: "Please provide valid email",
+                customemail: "Please provide valid email",
+              },
+              mobile_no:{
+                required: "Please provide your phone no",
+                digits: "Please provide only digits (0 - 9) in phone no",
+                rangelength: "Please provide valid phone no",       
+              },
+              first_name: {
+                  required: "Please provide first name"
+              },
+              middle_name: {
+                  required: "Please provide middle name"
+              },
+              last_name: {
+                  required: "Please provide last name"
+              },
+              pan: {
+                  required: "Please provide pan",
+                  // pan: "Please provide valid pan",
+                  panvalidate: "Please provide valid pan",
+              },
+              date_of_birth: {
+                  required: "Please provide date of birth"
+              },
+              city_of_birth: {
+                  required: "Please provide city of birth"
+              },
+              country_of_birth: {
+                  required: "Please provide country of birth"
+              },
+              mother_name: {
+                  required: "Please provide mother name"
+              },
+              annual_income: {
+                  required: "Please provide annual income"
+              },
+              occupation: {
+                  required: "Please provide occupation"
+              },
+              nominee_name: {
+                  required: "Please provide nominee name"
+              },
+              relation: {
+                  required: "Please provide relation"
+              },
+              nominee_birth_date: {
+                  required: "Please provide date of birth"
+                  // minorage: "Please enter guardian name",
+              },
+              is_minor: {
+                  required: ""
+              },
+              guardian_name: {
+                  required: "Please enter guardian name"
+              },
+              ifsc_code: {
+                  required: "Please provide ifsc code"
+              },
+              micr_no: {
+                  required: "Please provide micr code"
+              },
+              bank_account_number: {
+                  required: "Please provide account number"
+              },
+              file_upload: {
+                  required: "Please upload file"
+              },
+              address1: {
+                  required: "Please provide address"
+              },
+              address2: {
+                  required: "Please provide address"
+              },
+              address3: {
+                  required: "Please provide address"
+              },
+              city: {
+                  required: "Please provide city"
+              },
+              state: {
+                  required: "Please provide state"
+              },
+              pin_code: {
+                  required: "Please provide pin code"
+              },
+              file_upload_docs: {
+                  required: "Please upload file"
+              }
+          }
+          
+        });
+        //custom validation rule
+        $.validator.addMethod("customemail", 
+          function(value, element) {
+            if ($.trim(value) != ""){
+              var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+              return pattern.test(value);
+            }     
+            else
+            {
+              return true;
+            }
+          }, 
+        "Please provide valid email format"
+        );
+
+        // OTP validation
+        function clickEvent(first,last){
+          if(first.value.length){
+            document.getElementById(last).focus();
+          }
+        }
+
+        $.validator.addMethod("panvalidate", 
+          function(value, element) {
+            if ($.trim(value) != ""){
+              //var patt = new RegExp(/^[A-Z]{4}[P]{1}[0-9]{4}[A-Z]{1}$/i);
+              var patt = new RegExp(/^[A-Z]{5}[0-9]{4}[A-Z]{1}$/i);
+              return patt.test(value);
+            }     
+            else
+            {
+              return true;
+            }
+          }, 
+        "Please provide valid pan"
+        );
+
+        
+        
+        /* $.validator.addMethod("minorage",
+
+         function(value, element) {
+            var userinput = document.getElementById("nominee_birth_date").value;
+            // alert(userinput);
+
+            var dob = new Date(userinput);
+            // alert(dob);
+
+            //calculate month difference from current date in time
+            var month_diff = Date.now() - dob.getTime();
+            // alert(month_diff);
+            
+            //convert the calculated difference in date format
+            var age_dt = new Date(month_diff); 
+            // alert(age_dt);
+            
+            //extract year from date    
+            var year = age_dt.getUTCFullYear();
+            // alert(year);
+            
+            //now calculate the age of the user
+            var age = Math.abs(year - 1970);
+            // alert(age);
+
+            if(age < 18) {
+              // alert("sagar");
+              $("#agree_minor").show();
+            } 
+            else  
+            {
+              return true;
+            }
+          } 
+        ); */
+            
+        
+        /* $.validator.addMethod("panvalidate", 
+          function(value, element) {
+            var pno=form.pan.value;
+            // var patt = /^([A-Z]){5}([6-9]){4}([A-Z]){1}$/;
+            var patt = new RegExp(/^[A-Z]{4}[P]{1}[0-9]{4}[A-Z]{1}$/i);
+            if(pno.length!=10)
+            {
+              alert("Pan card no must be of 10 characters");
+            }
+            else {
+              alert("Wrong pan no");
+              return false;
+            }
+          }, 
+        "Please provide valid pan"
+        ); */
+
+        // document.getElementById("pan").onkeypress = function() {panValidate()};
+        // function panValidate() {
+        //     var pno=form.pan.value;
+        //     var patt = /[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
+        //     if(pno.length!=10)
+        //     {
+        //       // alert("Pan card no must be of 10 characters");
+        //     }
+        //     else {
+        //       alert("Wrong pan no");
+        //     }
+        //   }
+
+        /* $("#pan").change(function () {      
+          var inputvalues = $(this).val();      
+            var panregex = /[A-Z]{4}[P]{1}[0-9]{4}[A-Z]{1}$/;
+            var pan = {P:"Personal"};
+            if(!panregex.test(inputvalues)){  
+              if(pan != "undefined") {  
+                alert("invalid PAN no");     
+              }  
+              else {
+                // $("#pan").val("");  
+                alert("valid PAN no");  
+                return panregex.test(inputvalues);  
+              }
+            }    
+        }); */
+
+             
+  
+    $(document).ready(function () {
+      
+     // step 1
+     $("#stepone").click(function()
+      {
+        current_fs = $(this).parent().parent().parent()
+        next_fs = $(this).parent().parent().parent().next();
+      
+        if(vform.form())
+        {
+          $('#step1').hide();
+          $('#step2').show();
+          // setProgressBar(++current);
+          $("#bar1").addClass("activestep");
+          $("#progress1").addClass("activestep");
+        }
+        
+      });
+
+      // step 2
+      $("#steptwo").click(function()
+      {
+        current_fs = $(this).parent().parent().parent();
+        next_fs = $(this).parent().parent().parent().next();  
+
+        if(vform.form())
+        {
+          $('#step2').hide();
+          $('#step3').show(); 
+          $("#bar2").addClass("activestep");
+          $("#progress2").addClass("activestep");
+          // setProgressBar(++current);
+        }
+
+      });
+
+      // step 3
+      $("#stepthree").click(function()
+      {
+        current_fs = $(this).parent().parent().parent();
+        next_fs = $(this).parent().parent().parent().next();  
+
+        if(vform.form())
+        {
+        
+        $('#step3').hide();
+        $('#step4').show();
+        $("#bar3").addClass("activestep");
+        $("#progress3").addClass("activestep"); 
+        // setProgressBar(++current);
+        }
+        
+         
+      });
+
+      // step 4
+      $("#stepfour").click(function()
+      {
+        current_fs = $(this).parent().parent().parent();
+        next_fs = $(this).parent().parent().parent().next();  
+
+        if(vform.form())
+        {
+        
+        $('#step4').hide();
+        $('#step5').show();
+        $("#bar4").addClass("activestep");
+        $("#progress4").addClass("activestep"); 
+        // setProgressBar(++current);
+        }
+
+      });
+
+      // step 5
+      $("#stepfive").click(function()
+      {
+        current_fs = $(this).parent().parent().parent();
+        next_fs = $(this).parent().parent().parent().next();  
+
+        if(vform.form())
+        {
+        
+        $('#step5').hide();
+        $('#step6').show(); 
+        $("#bar5").addClass("activestep");
+        $("#progress5").addClass("activestep");
+        // setProgressBar(++current);
+        }
+
+      });
+
+      // previous 1
+      $("#previous1").click(function()
+      {
+        current_fs = $(this).parent().parent().parent()
+        previous_fs = $(this).parent().parent().parent().prev();
+        
+        $('#step5').hide();
+        $('#step4').show();
+        $("#bar4").removeClass("activestep");
+        // setProgressBar(--current);
+      });
+
+      // step 6
+      $("#stepsix").click(function()
+      {
+        current_fs = $(this).parent().parent().parent();
+        next_fs = $(this).parent().parent().parent().next();  
+
+        if(vform.form())
+        {
+        $('#step6').hide();
+        $('#step7').show();
+        $("#bar6").addClass("activestep");
+        $("#progress6").addClass("activestep"); 
+        // setProgressBar(++current);
+        }
+
+      });
+
+      // previous 2
+      $("#previous2").click(function()
+      {
+        current_fs = $(this).parent().parent().parent();
+        previous_fs = $(this).parent().parent().parent().prev();
+        
+        $('#step6').hide();
+        $('#step5').show(); 
+        $("#bar5").removeClass("activestep");
+        // setProgressBar(--current);
+      });
+
+      // step 7
+      $("#stepseven").click(function()
+      {
+        current_fs = $(this).parent().parent().parent();
+        next_fs = $(this).parent().parent().parent().next();  
+
+        if(vform.form())
+        {
+        $('#step7').hide();
+        $('#step8').show();
+        $("#bar7").addClass("activestep");
+        $("#progress7").addClass("activestep"); 
+        // setProgressBar(++current);
+        }
+
+      });
+
+      // previous 3
+      $("#previous3").click(function()
+      {
+        current_fs = $(this).parent().parent().parent();
+        previous_fs = $(this).parent().parent().parent().prev();
+        
+        $('#step7').hide();
+        $('#step6').show(); 
+        $("#bar6").removeClass("activestep");
+        // setProgressBar(--current);
+      });
+      
+
+      // step 8
+      $("#stepeight").click(function()
+      {
+        current_fs = $(this).parent().parent().parent();
+        next_fs = $(this).parent().parent().parent().next();  
+
+        if(vform.form())
+        {
+          $('#step8').hide();
+          $('#step9').show();
+          $("#bar8").addClass("activestep");
+          $("#progress8").addClass("activestep"); 
+          // setProgressBar(++current);
+        }
+      });
+
+      // previous 4
+      $("#previous4").click(function()
+      {
+        current_fs = $(this).parent().parent().parent();
+        previous_fs = $(this).parent().parent().parent().prev();
+        
+        $('#step8').hide();
+        $('#step7').show();
+        $("#bar7").removeClass("activestep"); 
+        // setProgressBar(--current);
+      });
+
+      // step 9
+      $("#stepnine").click(function()
+      {
+        current_fs = $(this).parent().parent().parent();
+        next_fs = $(this).parent().parent().parent().next();  
+
+        if(vform.form())
+        {
+          $('#step9').hide();
+          $('#step10').show();
+          $("#bar9").addClass("activestep");
+          $("#progress9").addClass("activestep"); 
+          // setProgressBar(++current);
+        }
+      });
+
+      // previous 5
+      $("#previous5").click(function()
+      {
+        current_fs = $(this).parent().parent().parent();
+        previous_fs = $(this).parent().parent().parent().prev();
+        
+        $('#step9').hide();
+        $('#step8').show();
+        $("#bar8").removeClass("activestep"); 
+        // setProgressBar(--current);
+      });
+
+
+      });
+
+    //   function setProgressBar(curStep){
+    //   var percent = parseFloat(100 / steps) * curStep;
+    //   percent = percent.toFixed();
+    //   $(".progress-bar").css("width",percent+"%")
+      
+    //   var percentagevalue1 = $('.progress-bar').get(0).style.width;
+    //   $('.percentage_show').html(percentagevalue1);
+    // }
+
+    // function showForm(courseId)
+    // {
+    //   $('#prgname').val(courseId);
+    //   $('#step9,#step8,#step7,#step6,#step5,#step4,#step3,#step2').hide();
+    //   $('#step1').show();
+    //   current = 0;
+    //   setProgressBar(current);
+    // }
+
+      // resetHeight();
+      // resetHeight1();
+      // resetHeight2();
+      //setProgressBar(current);
+
+</script>
+
+</body>
+</html>
